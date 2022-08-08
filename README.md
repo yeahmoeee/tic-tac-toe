@@ -26,7 +26,7 @@ Steps of the minimax algorithm:
 3. Beginning with the terminal states, determine the utility of the predecessor nodes as follows; if Node is a minimizer, value is the minimum of the children nodes, but if Node is a maximizer, value is the maximum of the children nodes.
 4. From the initial state (i.e., root of the game tree), maximizer chooses the move that leads to the highest value.
 
-![Tic_tac_toe svg](https://user-images.githubusercontent.com/76827587/183385196-92b38e55-d220-49fc-9156-8476d723e380.png)
+![1_BQVKAxmorPGfwAjVz1bI7A](https://user-images.githubusercontent.com/76827587/183385265-310dd32c-a21f-4f64-ba2a-4f7ed8cfbdff.png)
 
     
 
