@@ -27,4 +27,6 @@ def main():
         board.draw_board()
         print("Human(O) Wins! AI(X) Loses!")
 
-main()
+if __name__ == "__main__":
+    main()
+    

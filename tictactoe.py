@@ -5,7 +5,7 @@ class tictactoe:
 
     def draw_board(self):
         print("Current state: \n\n")
-        for i in range(0,9):
+        for i in range(9):
             if self.board[i] == 0:
                 print("- ", end = " ")
             elif self.board[i] == 1:
@@ -28,9 +28,15 @@ class tictactoe:
     
     def human_turn(self):
         pos = int(input("Enter O's position [1 to 9]: "))
-        if self.board[pos-1] != 0:
-            print("Illegal Move!")
-            exit(0)
+        while True:
+            try:
+                if self.board[pos-1] != 0:
+                    print("Illegal Move!")
+                    exit(0)
+                else:
+                    break
+            except IndexError:
+                pos = int(input("Enter O's position [1 to 9] again: "))
         self.board[pos-1] = -1
     
     def minimax_search(self,player):
@@ -38,7 +44,7 @@ class tictactoe:
         if result != 2:
             return result 
         scores = []
-        for i in range(0,9):
+        for i in range(9):
             if self.board[i] == 0:
                 self.board[i] = player
                 scores.append(self.minimax_search(player * -1))
@@ -48,7 +54,7 @@ class tictactoe:
     def ai_turn(self):
         pos = -1
         max_value = -2
-        for i in range(0,9):
+        for i in range(9):
             if self.board[i] == 0:
                 self.board[i] = 1
                 score = self.minimax_search(-1)
