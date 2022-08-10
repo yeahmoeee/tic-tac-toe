@@ -32,11 +32,12 @@ class tictactoe:
             try:
                 if self.board[pos-1] != 0:
                     print("Illegal Move!")
-                    pos = int(input("Enter O's position [1 to 9] again: "))
                 else:
                     break
             except IndexError:
                 pos = int(input("Enter O's position [1 to 9] again: "))
+                continue
+            pos = int(input("Enter O's position [1 to 9] again: "))
         self.board[pos-1] = -1
     
     def minimax_search(self,player):
