@@ -10,10 +10,13 @@ If not, check if there is a move that will block a win from the opposing player.
 Otherwise, just place your marker in a random empty cell.\
 The AI may not play optimally in this case.\
 
-## Algorithmic Game Theory Approach to the Game
+## An Algorithmic Game Theory Approach to the Game
 
 Minimax is a recursive algorithm which is used to choose an optimal move for a player assuming that the other player is also playing optimally. In minimax, the two players are called maximizer (the AI player of the game) and minimizer (the Human player of the game)
-, and define a scoring method from the view of the maximizer. The maximizer tries to maximize the score while the minimizer tries to minimize the score of the AI player.\
+, and define a scoring method from the view of the maximizer. The maximizer tries to maximize the score while the minimizer tries to minimize the score of the AI player.
+
+![Tic_tac_toe svg](https://user-images.githubusercontent.com/76827587/183385171-41c689db-c97a-4ae8-aac6-46495ab98717.png)
+
 
 This algorithm only works on game that has perfect information, is zero-sum and deterministic. 
 
@@ -23,6 +26,7 @@ Steps of the minimax algorithm:
 3. Beginning with the terminal states, determine the utility of the predecessor nodes as follows; if Node is a minimizer, value is the minimum of the children nodes, but if Node is a maximizer, value is the maximum of the children nodes.
 4. From the initial state (i.e., root of the game tree), maximizer chooses the move that leads to the highest value.
 
+![1_BQVKAxmorPGfwAjVz1bI7A](https://user-images.githubusercontent.com/76827587/183385265-310dd32c-a21f-4f64-ba2a-4f7ed8cfbdff.png)
 
     
 
