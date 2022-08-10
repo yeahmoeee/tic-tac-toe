@@ -32,7 +32,7 @@ class tictactoe:
             try:
                 if self.board[pos-1] != 0:
                     print("Illegal Move!")
-                    exit(0)
+                    pos = int(input("Enter O's position [1 to 9] again: "))
                 else:
                     break
             except IndexError:
