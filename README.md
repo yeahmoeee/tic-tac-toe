@@ -1,6 +1,6 @@
 # Tic-Tac-Toe Using Minimax
 
-Tic-Tac-Toe (also known as Noughts and Crosses) is a paper-and-pencil game for two players, who take turns marking the spaces in a 3 x 3 grid. The player who succeds in placing three of their marks in a diagonal, horizontal, or vertical line is the winner. 
+Tic-Tac-Toe (also known as Noughts and Crosses) is a paper-and-pencil game for two players, who take turns marking the spaces in a 3 x 3 grid. The player who succeed in placing three of their marks in a diagonal, horizontal, or vertical line is the winner. 
 
 
 ## A Naïve Approach to the Game
