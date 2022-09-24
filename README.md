@@ -8,7 +8,7 @@ Tic-Tac-Toe (also known as Noughts and Crosses) is a paper-and-pencil game for t
 First, if there is a move that will win the game, play it.\
 If not, check if there is a move that will block a win from the opposing player. If so, place your marker in the blocking spot.\
 Otherwise, just place your marker in a random empty cell.\
-The AI may not play optimally in this case.\
+The AI may not play optimally in this case.
 
 ## An Algorithmic Game Theory Approach to the Game
 
